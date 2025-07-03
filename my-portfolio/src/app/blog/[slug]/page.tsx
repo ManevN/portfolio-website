@@ -5,7 +5,7 @@ import React from "react";
 
 
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
+export default async function BlogPostPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) return notFound();
