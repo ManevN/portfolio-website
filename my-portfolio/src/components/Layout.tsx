@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <>
-      <header className="bg-gray-900 text-white px-6 py-4 flex justify-between items-center shadow-lg sticky top-0 z-50">
+      <header className="bg-transparent backdrop-blur-none text-white px-6 py-4 flex justify-between items-center sticky top-0 z-50 transition-all shadow-none border-none">
         <div className="flex items-center gap-4">
           <Link href="/">
             <h1 className="text-2xl font-extrabold tracking-tight cursor-pointer drop-shadow-lg">Nenad Manev</h1>
