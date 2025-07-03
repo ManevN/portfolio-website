@@ -30,15 +30,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <li className="px-4 py-2 hover:bg-gray-700 md:hover:bg-transparent">
               <Link href="/">Home</Link>
             </li>
+             <li className="px-4 py-2 hover:bg-gray-700 md:hover:bg-transparent">
+              <Link href="/about">About</Link>
+            </li>
             <li className="px-4 py-2 hover:bg-gray-700 md:hover:bg-transparent">
               <Link href="/projects">Projects</Link>
             </li>
             <li className="px-4 py-2 hover:bg-gray-700 md:hover:bg-transparent">
               <Link href="/blog">Blog</Link>
             </li>
-            <li className="px-4 py-2 hover:bg-gray-700 md:hover:bg-transparent">
-              <Link href="/about">About</Link>
-            </li>
+           
           </ul>
         </nav>
       </header>
