@@ -10,8 +10,14 @@ export const aboutMe = {
   summary: `With over seven years in software development, I’ve worked with both companies and on freelance projects, gaining solid experience in both team environments and independent contracting. My background spans .NET, Node, AWS, databases (SQL and NoSQL), and frontend development with SPA frameworks like React and Angular using TypeScript. I also have experience with CI/CD pipelines, supporting efficient development and deployment processes. I’m focused on building modular, maintainable, and scalable applications and want to be actively involved in design and decision-making.`,
   tags: [".NET", "Node", "AWS", "SQL", "React", "Angular", "CI/CD"],
   certifications: [
-    "AWS Certified Solutions Architect – Associate",
-    "AWS Certified Cloud Practitioner",
+    { 
+      name: "AWS Certified Solutions Architect – Associate",
+      url: "https://www.credly.com/badges/e80fd508-fe9a-4573-9780-7e4635409901/public_url"
+    },
+    {
+      name: "AWS Certified Cloud Practitioner",
+      url: "https://www.credly.com/badges/e2694f98-e5c9-49b6-9406-71f6ac494442/linked_in_profile"
+    }
   ],
   experience: [
     {
