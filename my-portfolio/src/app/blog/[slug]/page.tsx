@@ -1,9 +1,17 @@
 import { notFound } from "next/navigation";
-import { blogPosts, BlogPost } from "../../../data/blogPosts";
+import { blogPosts } from "../../../data/blogPosts";
 import React from "react";
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = blogPosts.find((p: BlogPost) => p.slug === params.slug);
+
+
+interface BlogPostPageProps {
+  params: { slug: string };
+}
+
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  // Await params as required by Next.js dynamic route API
+  const { slug } = await Promise.resolve(params);
+  const post = blogPosts.find((p: BlogPost) => p.slug === slug);
   if (!post) return notFound();
 
   return (
