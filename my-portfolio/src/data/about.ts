@@ -37,50 +37,82 @@ export const aboutMe = {
     },
     {
       role: "Senior Software Engineer | ScaleFocus",
+      period: "Jul 2022 – Jan 2023 (7mos)",
+      years: "Jul 2022 – Jan 2023 (7mos)",
       description:
-        "Worked on internal projects using .NET Core, Angular and Azure Cloud services during my 7-month engagement.",
-      technologies: [".NET Core API", "Angular", "Azure Cloud"],
+        "Outsourcing company, in the period of my engagement I was not assigned to an outsourced project, so I was working on an internal company’s project that includes following technologies.",
+      technologies: [
+        "Microsoft .NET Core API",
+        "Angular",
+        "Azure cloud services and hosting"
+      ]
     },
     {
       role: "Technical Team Lead | KlikniJadi",
+      period: "Jan 2021 – Jun 2022 (1yr 6mos)",
+      years: "Jan 2021 – Jun 2022 (1yr 6mos)",
       description:
-        "Led a food delivery platform with GPS tracking and payroll module integrated with legacy ASP.NET MVC. Managed planning, dev, and client coordination.",
+        "Our team delivered a web-based solution for a food delivery company, focusing on optimizing logistics and streamlining payroll. This real-time system included GPS tracking for drivers, supported by a custom algorithm that identifies the most efficient delivery routes. We used this location data to power a detailed payroll module, enabling precise salary calculations, along with generating Excel and PDF reports for comprehensive analysis.\nWe integrated the solution with an existing legacy ASP.NET MVC system already in production, which we continue to maintain and expand with new features. My role covered client communication, planning, and backend development tasks, ensuring that the project was aligned with client needs and that technical challenges were addressed effectively.",
       technologies: [
-        ".NET Core API",
-        "SignalR (WebSocket)",
+        "Microsoft .NET Core API",
+        "Microsoft SignalR (WebSocket) for real time communication",
         "React",
         "Docker",
         "Microsoft MVC",
-        "Unit testing",
-        "SQL Server",
-        "Windows Server + IIS",
-        "CI/CD with Azure Pipelines",
-        "Azure DevOps + Scrum",
-        "Firebase (GCP)",
-        "OSRM, Bing Maps, Slack API",
+        "Unit test",
+        "Microsoft SQL Server",
+        "Windows Server (IIS) hosting, administration",
+        "CI/CD with Azure pipelines",
+        "Azure DevOps and Scrum methodology",
+        "Google Cloud Platform – Firebase (Authentication, Serverless functions, real-time database, Firebase Cloud Messaging)",
+        "Third-Party API Integration (OSRM API, Bing Maps Location API, Slack API)"
       ],
+      responsibilities: [
+        "Communication with client and third-party teams that worked on the same project but different application.",
+        "Planning and organizing development with my team following Scrum (Agile) methodology.",
+        "Back-end Development",
+        "Integration between systems (legacy and new ones)"
+      ]
     },
     {
       role: "Full Stack Web Developer | MCA",
+      period: "Jan 2019 – Dec 2020 (2 yrs)",
+      years: "Jan 2019 – Dec 2020 (2 yrs)",
       description:
-        "Built CRM/ERP, customer portal, and network configuration for Danish telecom. Worked on legacy + microservices migration (CQRS).",
+        "We worked on a web-based solution for a major telecom company in Denmark, designed as a large-scale system with multiple components: a publicly accessible customer portal, an internal CRM/ERP for the company, and a network configuration module handling tasks like device scanning, configuration updates, and signal strength monitoring.\nAlongside maintaining the legacy system, we were actively planning and executing a migration to a new microservices-based version using the CQRS pattern. Both the legacy and new solutions were in production, fully integrated to ensure a seamless transition and continuity in service.",
       technologies: [
-        ".NET Core",
+        "Microsoft .NET Core",
         "Angular",
         "Microsoft Web Forms",
-        "WCF Services",
-        "SQL Server",
-        "Entity Framework / Dapper",
-        "Windows Server + IIS",
-        "Azure CI/CD",
-        "Scrum with Azure DevOps",
+        "Microsoft WCF Services",
+        "Microsoft SQL Server database",
+        "Entity Framework, Dapper",
+        "Windows Server (IIS) hosting, Administration",
+        "CI/CD with Azure pipelines",
+        "Azure DevOps and Scrum methodology"
       ],
+      responsibilities: [
+        "Full Stack development",
+        "Reviewing pull requests",
+        "Participating in planning sessions"
+      ]
     },
     {
       role: "Software Developer | Duna",
+      period: "Aug 2017 – Dec 2018 (1yr 5mos)",
+      years: "Aug 2017 – Dec 2018 (1yr 5mos)",
       description:
-        "Built WPF desktop app for internal logistics with complex SQL stored procedures and WCF services.",
-      technologies: ["WPF (C#)", "SQL Server", "WCF Services"],
+        "We developed a desktop application solution for a package delivery company, tailored exclusively for internal company use. The application’s core logic and reporting functionality were heavily reliant on SQL stored procedures, providing me with extensive experience in database management and complex SQL query optimization.",
+      technologies: [
+        "Microsoft Windows Presentation Foundation (WPF) with C#",
+        "Microsoft SQL Server database",
+        "Microsoft WCF Services"
+      ],
+      responsibilities: [
+        "Front- and back-end development.",
+        "Reviewing pull requests",
+        "Participating in planning sessions"
+      ]
     },
     {
       role: "Backend Developer | Skip Crowds (Apr 2020 – Jun 2020)",

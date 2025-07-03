@@ -47,7 +47,14 @@ export default function About() {
         <h3>Professional Experience</h3>
         {aboutMe.experience.map((job, idx) => (
           <article key={idx} className="mb-6">
-            <h4>{job.role}</h4>
+            <h4>
+              {job.role}
+              {job.period && (
+                <span className="block text-sm font-normal text-gray-600 dark:text-gray-400">
+                  {job.period}
+                </span>
+              )}
+            </h4>
             <p>{job.description}</p>
 
             {job.responsibilities && (
