@@ -44,7 +44,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </nav>
       </header>
 
-      <main className="max-w-4xl mx-auto p-6">{children}</main>
+      <main className="max-w-4xl mx-auto p-6 my-8">{children}</main>
 
       <footer className="text-center p-6 text-gray-500 text-sm border-t mt-12">
         &copy; {new Date().getFullYear()} Nenad Manev. All rights reserved.
