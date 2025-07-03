@@ -4,14 +4,10 @@ import React from "react";
 
 
 
-interface BlogPostPageProps {
-  params: { slug: string };
-}
 
-export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  // Await params as required by Next.js dynamic route API
-  const { slug } = await Promise.resolve(params);
-  const post = blogPosts.find((p: BlogPost) => p.slug === slug);
+export default function BlogPostPage({ params }: { params: { slug: string } }) {
+  const { slug } = params;
+  const post = blogPosts.find((p) => p.slug === slug);
   if (!post) return notFound();
 
   return (
