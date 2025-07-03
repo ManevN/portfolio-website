@@ -17,6 +17,7 @@ export default function About() {
           {/* <li><strong>Mobile:</strong> {aboutMe.contact.mobile}</li> */}
           <li><strong>LinkedIn:</strong> <a href={`https://linkedin.com/in/${aboutMe.contact.linkedin}`} target="_blank" className="text-indigo-600 hover:underline" rel="noreferrer">{aboutMe.contact.linkedin}</a></li>
           <li><strong>GitHub:</strong> <a href={`https://github.com/${aboutMe.contact.github}`} target="_blank" className="text-indigo-600 hover:underline" rel="noreferrer">{aboutMe.contact.github}</a></li>
+          <li><strong>Stack Overflow:</strong> <a href="https://stackoverflow.com/users/15568047/nenadm" target="_blank" className="text-indigo-600 hover:underline" rel="noreferrer">nenadm</a></li>
         </ul>
       </section>
 
