@@ -8,25 +8,23 @@ export default function ProjectsPage() {
   const [selected, setSelected] = useState<string | null>(null);
 
   return (
-    <main className="p-8 max-w-4xl mx-auto">
-      <h1 className="text-4xl font-extrabold mb-10 text-indigo-700">Projects</h1>
+    <main className="w-full px-6 py-12 space-y-12 animate-fade-in">
+      <h1 className="text-5xl font-extrabold mb-10 text-center bg-gradient-to-r from-indigo-600 via-blue-500 to-teal-400 bg-clip-text text-transparent drop-shadow-lg">Projects</h1>
 
-      {projects.map((project) => (
-        <div
-          key={project.title}
-          className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg mb-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
-        >
-          <div className="p-6">
-            <h2 className="text-3xl font-semibold text-indigo-600 dark:text-indigo-400">
-              {project.title}
-            </h2>
-            <p className="mt-2 mb-4 text-gray-700 dark:text-gray-300">{project.description}</p>
+      <div className="grid gap-10 md:grid-cols-2">
+        {projects.map((project) => (
+          <div
+            key={project.title}
+            className="bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 flex flex-col"
+          >
+            <h2 className="text-2xl font-bold text-indigo-700 dark:text-indigo-300 mb-2">{project.title}</h2>
+            <p className="mb-4 text-gray-700 dark:text-gray-300">{project.description}</p>
 
-            <div className="flex flex-wrap gap-3 mb-5">
+            <div className="flex flex-wrap gap-2 mb-4">
               {project.techStack.map((tech) => (
                 <span
                   key={tech}
-                  className="bg-indigo-100 text-indigo-800 dark:bg-indigo-700 dark:text-indigo-100 px-4 py-1 rounded-full text-sm font-medium"
+                  className="bg-indigo-100 text-indigo-800 dark:bg-indigo-700 dark:text-indigo-100 px-3 py-1 rounded-full text-xs font-medium shadow hover:scale-105 transition-transform"
                 >
                   {tech}
                 </span>
@@ -37,17 +35,16 @@ export default function ProjectsPage() {
               onClick={() =>
                 setSelected(selected === project.title ? null : project.title)
               }
-              className="text-indigo-600 dark:text-indigo-400 hover:underline font-semibold"
+              className="self-start mt-auto text-indigo-600 dark:text-indigo-400 hover:underline font-semibold transition-colors"
             >
               {selected === project.title ? 'Hide details' : 'Show details'}
             </button>
 
             {selected === project.title && project.details && (
-              <div className="mt-6 prose prose-indigo dark:prose-invert max-w-none">
+              <div className="mt-6 prose prose-indigo dark:prose-invert max-w-none animate-fade-in">
                 <ReactMarkdown>{project.details}</ReactMarkdown>
               </div>
             )}
-            <br></br>
             <a
               href={project.githubUrl}
               target="_blank"
@@ -57,8 +54,8 @@ export default function ProjectsPage() {
               View on GitHub →
             </a>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </main>
   );
 }

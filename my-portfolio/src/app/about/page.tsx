@@ -4,34 +4,34 @@ import { aboutMe } from '@/data/about';
 
 export default function About() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-12 space-y-12 text-base text-gray-800 dark:text-gray-200">
-      <header className="space-y-2">
-        <h1 className="text-4xl font-bold">{aboutMe.name}</h1>
-        <h2 className="text-2xl text-indigo-600">{aboutMe.title}</h2>
+    <main className="w-full px-6 py-12 space-y-16 text-base text-gray-800 dark:text-gray-200 animate-fade-in">
+      <header className="space-y-2 text-center">
+        <h1 className="text-5xl font-extrabold mb-2 bg-gradient-to-r from-indigo-600 via-blue-500 to-teal-400 bg-clip-text text-transparent drop-shadow-lg">{aboutMe.name}</h1>
+        <h2 className="text-2xl text-indigo-600 dark:text-indigo-300 font-semibold mb-4">{aboutMe.title}</h2>
       </header>
 
-      <section>
-        <h3 className="text-xl font-semibold mb-2">Contact</h3>
+      <section className="rounded-xl bg-white/80 dark:bg-gray-900/80 shadow-lg p-8 max-w-2xl mx-auto">
+        <h3 className="text-xl font-semibold mb-4 text-indigo-700 dark:text-indigo-300">Contact</h3>
         <ul className="grid sm:grid-cols-2 gap-y-2">
-          <li><strong>Email:</strong> <a href={`mailto:${aboutMe.contact.email}`} className="text-indigo-600">{aboutMe.contact.email}</a></li>
+          <li><strong>Email:</strong> <a href={`mailto:${aboutMe.contact.email}`} className="text-indigo-600 hover:underline">{aboutMe.contact.email}</a></li>
           <li><strong>Mobile:</strong> {aboutMe.contact.mobile}</li>
-          <li><strong>LinkedIn:</strong> <a href={`https://linkedin.com/in/${aboutMe.contact.linkedin}`} target="_blank" className="text-indigo-600" rel="noreferrer">{aboutMe.contact.linkedin}</a></li>
-          <li><strong>GitHub:</strong> <a href={`https://github.com/${aboutMe.contact.github}`} target="_blank" className="text-indigo-600" rel="noreferrer">{aboutMe.contact.github}</a></li>
+          <li><strong>LinkedIn:</strong> <a href={`https://linkedin.com/in/${aboutMe.contact.linkedin}`} target="_blank" className="text-indigo-600 hover:underline" rel="noreferrer">{aboutMe.contact.linkedin}</a></li>
+          <li><strong>GitHub:</strong> <a href={`https://github.com/${aboutMe.contact.github}`} target="_blank" className="text-indigo-600 hover:underline" rel="noreferrer">{aboutMe.contact.github}</a></li>
         </ul>
       </section>
 
-      <section>
-        <h3 className="text-xl font-semibold mb-2">About Me</h3>
-        <p className="leading-relaxed">{aboutMe.summary}</p>
+      <section className="rounded-xl bg-white/80 dark:bg-gray-900/80 shadow-lg p-8 max-w-2xl mx-auto">
+        <h3 className="text-xl font-semibold mb-4 text-indigo-700 dark:text-indigo-300">About Me</h3>
+        <p className="leading-relaxed text-lg">{aboutMe.summary}</p>
       </section>
 
-      <section>
-        <h3 className="text-xl font-semibold mb-2">Skills & Tags</h3>
-        <div className="flex flex-wrap gap-2">
+      <section className="rounded-xl bg-white/80 dark:bg-gray-900/80 shadow-lg p-8 max-w-2xl mx-auto">
+        <h3 className="text-xl font-semibold mb-4 text-indigo-700 dark:text-indigo-300">Skills & Tags</h3>
+        <div className="flex flex-wrap gap-2 justify-center">
           {aboutMe.tags.map((tag) => (
             <span
               key={tag}
-              className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium"
+              className="bg-indigo-100 text-indigo-800 dark:bg-indigo-700 dark:text-indigo-100 px-3 py-1 rounded-full text-sm font-medium shadow hover:scale-105 transition-transform"
             >
               {tag}
             </span>
