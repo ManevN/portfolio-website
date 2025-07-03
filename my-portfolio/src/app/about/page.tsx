@@ -14,7 +14,7 @@ export default function About() {
         <h3 className="text-xl font-semibold mb-4 text-indigo-700 dark:text-indigo-300">Contact</h3>
         <ul className="grid sm:grid-cols-2 gap-y-2">
           <li><strong>Email:</strong> <a href={`mailto:${aboutMe.contact.email}`} className="text-indigo-600 hover:underline">{aboutMe.contact.email}</a></li>
-          <li><strong>Mobile:</strong> {aboutMe.contact.mobile}</li>
+          {/* <li><strong>Mobile:</strong> {aboutMe.contact.mobile}</li> */}
           <li><strong>LinkedIn:</strong> <a href={`https://linkedin.com/in/${aboutMe.contact.linkedin}`} target="_blank" className="text-indigo-600 hover:underline" rel="noreferrer">{aboutMe.contact.linkedin}</a></li>
           <li><strong>GitHub:</strong> <a href={`https://github.com/${aboutMe.contact.github}`} target="_blank" className="text-indigo-600 hover:underline" rel="noreferrer">{aboutMe.contact.github}</a></li>
         </ul>

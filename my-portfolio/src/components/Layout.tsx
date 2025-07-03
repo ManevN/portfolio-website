@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import ThemeToggle from './ThemeToggle';
+
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,7 +41,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Link href="/blog">Blog</Link>
             </li>
           </ul>
-          <ThemeToggle />
         </nav>
       </header>
 

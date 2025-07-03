@@ -4,8 +4,7 @@ export const aboutMe = {
   contact: {
     email: "nenad.manev@gmail.com",
     linkedin: "nenad-manev",
-    github: "ManevN",
-    mobile: "+389 76 260 124",
+    github: "ManevN"
   },
   summary: `With over seven years in software development, I’ve worked with both companies and on freelance projects, gaining solid experience in both team environments and independent contracting. My background spans .NET, Node, AWS, databases (SQL and NoSQL), and frontend development with SPA frameworks like React and Angular using TypeScript. I also have experience with CI/CD pipelines, supporting efficient development and deployment processes. I’m focused on building modular, maintainable, and scalable applications and want to be actively involved in design and decision-making.`,
   tags: [".NET", "Node", "AWS", "SQL", "React", "Angular", "CI/CD"],
