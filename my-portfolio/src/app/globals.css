@@ -14,8 +14,9 @@
   }
 }
 
+
 body {
-  background: var(--background);
+  /* background is set via Tailwind class in layout.tsx for site-wide gradient */
   color: var(--foreground);
   font-family: 'Inter', 'Segoe UI', Arial, Helvetica, sans-serif;
   min-height: 100vh;
