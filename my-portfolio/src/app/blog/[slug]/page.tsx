@@ -5,8 +5,9 @@ import React from "react";
 
 
 
-export default async function BlogPostPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function BlogPostPage(props: any) {
+  const { slug } = await props.params;
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) return notFound();
 
