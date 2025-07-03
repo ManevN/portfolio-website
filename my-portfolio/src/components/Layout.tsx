@@ -46,7 +46,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       <main className="w-full p-6 my-8 animate-fade-in min-h-[70vh]">{children}</main>
 
-      <footer className="text-center p-6 text-gray-500 text-sm border-t mt-12 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md">
+      <footer className="text-center p-6 text-gray-500 text-sm border-t bg-white/70 dark:bg-gray-900/70 backdrop-blur-md w-full fixed bottom-0 left-0 z-40">
         &copy; {new Date().getFullYear()} Nenad Manev. All rights reserved.
       </footer>
     </>
