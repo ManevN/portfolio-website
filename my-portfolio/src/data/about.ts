@@ -17,23 +17,44 @@ export const aboutMe = {
     {
       role: "Backend && Cloud Developer | Contractor",
       description:
-        "Built a streaming video platform for courses and presentations on AWS, supporting web and mobile clients.",
+        "I worked on building a streaming video platform designed for courses and presentations. The application was developed on AWS as the cloud platform, with .NET Core for the backend, supporting two web clients and one mobile client application.",
       technologies: [
-        ".NET Core API",
+        "Microsoft .NET Core API",
         "Unit test",
         "Docker",
         "AWS MediaConvert",
-        "AWS CodePipeline",
-        "AWS Beanstalk",
-        "AWS RDS (PostgreSQL)",
-        "AWS EC2",
-        "AWS API Gateway",
-        "AWS Load Balancer",
-        "AWS SQS / SNS / Lambda",
+        "AWS CodePipeline for CI/CD, AWS Beanstalk",
+        "AWS RDS with PostgreSQL, AWS EC2, AWS API Gateway, AWS Load Balancer",
+        "AWS SQS, AWS SNS, AWS Lambda",
         "AWS CDK with TypeScript",
-        "AWS Cognito",
-        "Stripe billing",
-      ],
+        "AWS Cognito authentication with social logins",
+        "Subscription-based billing integration with Stripe"
+      ]
+    }, 
+    {
+      role: "Full Stack Web Developer | Contractor",
+      description:
+        "Worked on centralized chat application with multiple AI chat bots as a SaaS product. This platform enabled seamless communication and automation through a unified chat interface integrated with various AI chat bots. Key features included a centralized chat interface, concurrent response handling, access to multiple AI bots, customizable prompts, and subscription management via Stripe.",
+      technologies: [
+        "AWS serverless backend using AWS Lambda with Node.js",
+        "AWS DynamoDB",
+        "AWS Cognito authentication with social logins",
+        "Angular frontend",
+        "Subscription-based billing integration with Stripe"
+      ]
+    },
+    {
+      role: "Full Stack Web Developer | Contractor",
+      description:
+        "I developed an end-to-end Proof of Concept (PoC) for a multi-tenant SaaS platform aimed at modernizing order management for the Food & Beverages industry, specifically tailored for restaurants, bars, and similar businesses. Key features included order, employee, work shift, and product management, along with a robust notification system. The platform was designed with an offline-first approach to ensure functionality in low-connectivity environments.",
+      technologies: [
+        "AWS serverless backend using Amplify",
+        "GraphQL API with real-time syncing between devices",
+        "AWS DynamoDB",
+        "AWS Cognito authentication with social logins",
+        "Angular frontend",
+        "Subscription-based billing integration with Paddle or Stripe"
+      ]
     },
     {
       role: "Senior Software Engineer | ScaleFocus",
